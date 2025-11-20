@@ -1,18 +1,24 @@
 /*
- First name: Carlos
- Last name: Stevenson
- This year: 1965
- Birth year: 1947
+ First name: Carlos 
+ Last name: Stevenson 
+ This year: 1965  
+ Birth year: 1947 
 
  The greeting should read: "Hello! My name is Carlos Stevenson and I am 18 years old."
 */
 
+
 // Add your code right below, good luck!
+const firstName = "Carlos"
+const lastName = "Stevenson"
+const thisYear = 1965
+const birthYear = 1947
+const age = thisYear - birthYear;
+const fullName = (firstName + " " + lastName)
 
+const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
 
-
-
-
+console.log(greeting);
 // Do not change this
 module.exports = {
   firstName: typeof firstName === 'undefined' ? undefined : firstName,
